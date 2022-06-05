@@ -27,7 +27,12 @@ rm */.gitignore
 rm */check.sh
 rm */LICENSE
 rm */package-lock.json
-# rm */package.json
 rm */test.*
 rm */tsconfig.json
 rm */webpack.config.js
+
+cd ..
+node version.js
+cd dist
+
+rm */package.json
