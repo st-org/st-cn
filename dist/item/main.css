@@ -1,0 +1,14 @@
+div.unit.item {
+    align-items: baseline;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+}
+
+div.unit.item>div:first-child {
+    min-width: var(--length-tab);
+    text-align: right;
+}
+
+div.unit.item>div:first-child::after {
+    content: " ";
+}

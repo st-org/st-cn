@@ -1,0 +1,54 @@
+@import url(icons/main.css);
+
+.rate-bar {
+    background: linear-gradient(to right, var(--color-variable) calc(100% * var(--rate)), var(--color-pre) calc(100% * var(--rate)));
+}
+
+.unit.player {
+    position: relative;
+}
+
+.unit.player>video {
+    display: block;
+    filter: brightness(var(--brightness));
+    max-height: 100vh;
+    width: 100%;
+}
+
+.unit.player>div {
+    background: linear-gradient(to top, var(--color-background), 75%, transparent);
+    bottom: 0;
+    font-size: var(--length-font-code);
+    left: 0;
+    padding: var(--length-gap);
+    position: absolute;
+    right: 0;
+}
+
+.unit.player>div>div {
+    align-items: center;
+    display: flex;
+    gap: var(--length-gap);
+}
+
+.unit.player>div>div>.rate-bar {
+    border-radius: 3px;
+    flex-grow: 1;
+    height: 6px;
+}
+
+.unit.player.error::before,
+.unit.player.loading::before {
+    background: var(--color-warn);
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 2px;
+}
+
+.unit.player.loading::before {
+    background: var(--color-string);
+}

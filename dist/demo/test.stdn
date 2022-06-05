@@ -1,0 +1,124 @@
+{title [Test]}
+{css-src main.css, ucs-src ucs.js, global []}
+{global, no-count-inside, demo []}
+{global, no-count-inside, source []}
+{global, no-count-inside, result []}
+{demo []}
+[]
+{demo [
+    //
+    {align [
+        [H_0(pt)&\cong\tilde H_0(pt)\oplus\Z \tag*{id h-vs-h-tilde, compile-with index, equation []}\\]
+        [&\cong\Z \tag*{compile-with index, mark {span [
+            placeholder
+            [{ref-id h-vs-h-tilde, class no-tag, ref []}{'\''}]
+        ]}, equation []}]
+    ]}
+]}
+[]
+{demo [
+    placeholder
+    {css-src main.css, ucs-src ucs.js, global []}
+    {demo [
+        placeholder
+        {align [
+            [H_0(pt)&\cong\tilde H_0(pt)\oplus\Z \tag*{id h-vs-h-tilde, compile-with index, equation []}\\]
+            [&\cong\Z \tag*{compile-with index, mark {span [
+                placeholder placeholder
+                [{ref-id h-vs-h-tilde, class no-tag, ref []}{'\''}]
+            ]}, equation []}]
+        ]}
+    ]}
+    placeholder
+]}
+[]
+{source [
+    //
+    {align [
+        [H_0(pt)&\cong\tilde H_0(pt)\oplus\Z \tag*{id h-vs-h-tilde, compile-with index, equation []}\\]
+        [&\cong\Z \tag*{compile-with index, mark {span [
+            placeholder
+            [{ref-id h-vs-h-tilde, class no-tag, ref []}{'\''}]
+        ]}, equation []}]
+    ]}
+]}
+[]
+{result [
+    //
+    {align [
+        [H_0(pt)&\cong\tilde H_0(pt)\oplus\Z \tag*{id h-vs-h-tilde, compile-with index, equation []}\\]
+        [&\cong\Z \tag*{compile-with index, mark {span [
+            //
+            [{ref-id h-vs-h-tilde, class no-tag, ref []}{'\''}]
+        ]}, equation []}]
+    ]}
+]}
+[]
+{demo [{h1 [Test]}]}
+[]
+{align [
+    [H_0(pt)&\cong\tilde H_0(pt)\oplus\Z \tag*{id h-vs-h-tilde, compile-with index, equation []}\\]
+    [&\cong\Z \tag*{compile-with index, mark {span [
+        //
+        [{ref-id h-vs-h-tilde, class no-tag, ref []}{'\''}]
+    ]}, equation []}]
+]}
+[]
+{parse, demo [
+    first line
+    ['second '{span [line]}]
+]}
+[]
+{html, demo [
+    first line
+    ['second '{span [line]}]
+]}
+[]
+{demo [
+    {global, vsce cpp, code []}
+    {global, vsce-gh James-Yu/LaTeX-Workshop, code []}
+    {lang c, code [
+        'int main(){'
+        '    return 0;'
+        '}'
+    ]}
+    {lang latex, code [
+        '\begin{document}'
+        '$e^{i\pi}=-1$'
+        '\end{document}'
+    ]}
+    {lang bibtex, code [
+        '@article {MR721448,'
+        '    AUTHOR = {Atiyah, M. F. and Bott, R.},'
+        '    TITLE = {The moment map and equivariant cohomology}'
+        '}'
+    ]}
+]}
+[]
+{source [{global, vsce cpp, code []}]}
+[]
+{div [flt]}
+[]
+{demo [
+    Top
+    {id flt, mark FLT, desc Fermat, theorem [
+        ['Let '{'n'}' be an integer greater than '{'2,'}' then there are no positive integers '{'a,b,c'}' satisfying']
+        {display, 'a^n+b^n=c^n.'}
+    ]}
+    ['The first successful proof of '{ref-id flt, ref []}' was released in 1994 by Andrew Wiles.']
+    {href #, a [To top]}
+]}
+[]
+{demo [
+    {css-src main.css, ucs-src ucs.js, global []}
+    {demo [
+        Top
+        {id flt, mark FLT, desc Fermat, theorem [
+            ['Let '{'n'}' be an integer greater than '{'2,'}' then there are no positive integers '{'a,b,c'}' satisfying']
+            {display, 'a^n+b^n=c^n.'}
+        ]}
+        ['The first successful proof of '{ref-id flt, ref []}' was released in 1994 by Andrew Wiles.']
+        {href #, a [To top]}
+    ]}
+]}
+[]

@@ -1,0 +1,80 @@
+body>.lr-struct>main>article {
+    padding: 0;
+}
+
+body>.lr-struct>main>article>svg,
+:host>div>svg {
+    border: solid var(--color-border);
+    border-width: 1px 0;
+    display: block;
+    margin: var(--length-padding) 0;
+    width: 100%;
+}
+
+@media print {
+    body>.lr-struct>main>article>svg {
+        border: 0;
+        margin: 0;
+    }
+}
+
+body>.lr-struct>main>article>svg>foreignObject>div>header,
+body>.lr-struct>main>article>svg>foreignObject>div>footer,
+:host>div>svg>foreignObject>div>header,
+:host>div>svg>foreignObject>div>footer {
+    align-items: center;
+    display: flex;
+    white-space: pre-wrap;
+}
+
+body>.lr-struct>main>article>svg:nth-of-type(2n+1)>foreignObject>div>header,
+body>.lr-struct>main>article>svg:nth-of-type(2n+1)>foreignObject>div>footer,
+:host>div>svg:nth-of-type(2n+1)>foreignObject>div>header,
+:host>div>svg:nth-of-type(2n+1)>foreignObject>div>footer {
+    justify-content: flex-end;
+}
+
+body>.lr-struct>main>article>svg>foreignObject>div>header>div>span:first-child:not(:empty)::after,
+:host>div>svg>foreignObject>div>header>div>span:first-child:not(:empty)::after {
+    content: "  ";
+}
+
+.unit.contents>div {
+    display: flow-root;
+}
+
+.unit.contents>div.level1 {
+    margin: var(--length-gap) 0;
+}
+
+.unit.contents>div.level2 {
+    margin-left: var(--length-tab);
+}
+
+.unit.contents>div.level3 {
+    margin-left: calc(2 * var(--length-tab));
+}
+
+.unit.contents>div>span:first-child:not(:empty)::after {
+    content: "  ";
+}
+
+.unit.contents>div>div {
+    float: right;
+}
+
+.unit.contents>div>div>div {
+    color: var(--color-light);
+    display: inline-block;
+    text-align: center;
+}
+
+.unit.contents>div>div>div::before {
+    content: ".";
+}
+
+.unit.contents>div>div>a {
+    display: inline-block;
+    text-align: right;
+    width: var(--length-tab);
+}

@@ -1,0 +1,16 @@
+.unit.cd {
+    display: inline-block;
+}
+
+.unit.cd>svg>g>path {
+    stroke: currentColor;
+    stroke-linecap: round;
+}
+
+.unit.cd>svg>g.dashed>path.body {
+    stroke-dasharray: .3 .2;
+}
+
+.unit.cd>svg>g.dotted>path.body {
+    stroke-dasharray: .06 .12;
+}

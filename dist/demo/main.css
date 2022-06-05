@@ -1,0 +1,33 @@
+.unit.demo {
+    display: grid;
+    gap: var(--length-gap);
+    grid-template-columns: 1fr 1fr;
+}
+
+.unit.demo>div {
+    display: grid;
+    gap: var(--length-gap);
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+}
+
+.unit.demo>div::before {
+    display: block;
+    margin: var(--length-space) 0;
+    text-align: center;
+}
+
+.unit.demo>.source::before {
+    content: "Source";
+}
+
+.unit.demo>.result::before {
+    content: "Result";
+}
+
+.unit.demo>div:first-child>textarea {
+    font-family: var(--font-mono);
+    font-size: var(--length-font-code);
+    margin: var(--length-gap) 0;
+    padding: calc(var(--length-padding) - 1px);
+}

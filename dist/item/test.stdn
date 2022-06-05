@@ -1,0 +1,12 @@
+{css-src main.css, ucs-src ucs.js, global []}
+{item [
+    []
+    {item [
+        (a)
+        {item [
+            {'ⅰ\Rarrⅱ'}
+            {equation [Test]}
+        ]}
+    ]}
+]}
+[]
