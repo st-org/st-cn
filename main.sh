@@ -29,7 +29,7 @@ rm */tsconfig.json
 rm */webpack.config.js
 
 cd ..
-node version.js
+node version.mjs
 cd dist
 
 rm */package.json
