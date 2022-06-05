@@ -1,0 +1,52 @@
+/* dark */
+html[data-color-scheme=dark] .invert {
+    filter: brightness(calc(11 / 12)) invert(1) brightness(.8);
+}
+
+html[data-color-scheme=dark] .light {
+    filter: brightness(calc(11 / 14)) invert(.325) brightness(calc(4 / 3));
+}
+
+html[data-color-scheme=dark] .dark {
+    filter: brightness(.6875) invert(.1) brightness(calc(2 / 3));
+}
+
+@media (prefers-color-scheme: dark) {
+    html:not([data-color-scheme=light]) .invert {
+        filter: brightness(calc(11 / 12)) invert(1) brightness(.8);
+    }
+
+    html:not([data-color-scheme=light]) .light {
+        filter: brightness(calc(11 / 14)) invert(.325) brightness(calc(4 / 3));
+    }
+
+    html:not([data-color-scheme=light]) .dark {
+        filter: brightness(.6875) invert(.1) brightness(calc(2 / 3));
+    }
+}
+
+/* hide */
+.collapse {
+    visibility: collapse;
+}
+
+.hide {
+    display: none !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.translucent {
+    opacity: .5;
+}
+
+.transparent {
+    opacity: 0;
+}
+
+/* others */
+.warn {
+    color: var(--color-warn);
+}

@@ -1,0 +1,22 @@
+rm -rf dist
+mkdir dist
+cd dist
+
+git clone https://github.com/st-org/stc.git --depth 1
+git clone https://github.com/st-org/sthl.git --depth 1
+git clone https://github.com/st-org/stui.git --depth 1
+git clone https://github.com/st-org/st-std.git --depth 1 -b cn
+git clone https://github.com/st-org/st-view.git --depth 1 -b cn
+
+rm -rf */.git
+rm -r */dist
+rm -r */scripts
+rm -r */src
+rm -r */test
+rm */.gitignore
+rm */check.sh
+rm */LICENSE
+rm */package-lock.json
+rm */package.json
+rm */tsconfig.json
+rm */webpack.config.js

@@ -1,0 +1,101 @@
+/* lr-struct */
+body>.lr-struct>main {
+    box-sizing: border-box;
+    display: flow-root;
+    margin-left: var(--length-width-side);
+    min-height: 100vh;
+    white-space: pre-wrap;
+}
+
+body>.lr-struct>button {
+    display: none;
+    left: 0;
+    position: fixed;
+    top: 0;
+}
+
+body>.lr-struct>aside {
+    background: var(--color-pre);
+    border-right: 1px solid var(--color-border);
+    bottom: 0;
+    box-sizing: border-box;
+    display: flow-root;
+    left: 0;
+    max-width: 90%;
+    position: fixed;
+    top: 0;
+    white-space: pre-wrap;
+    width: var(--length-width-side);
+}
+
+@media screen and (max-width:960px) {
+    body>.lr-struct>aside:not(.active) {
+        display: none;
+    }
+
+    body>.lr-struct>button {
+        display: block;
+    }
+
+    body>.lr-struct>main {
+        margin-left: 0;
+    }
+}
+
+body>.lr-struct>aside>.sash {
+    cursor: ew-resize;
+    height: 100%;
+    position: absolute;
+    right: -5px;
+    top: 0;
+    width: 10px;
+}
+
+body>.lr-struct.sashing>aside>.sash {
+    background: var(--color-slice);
+}
+
+body>.lr-struct>aside>.content.vanished {
+    display: none;
+}
+
+@media print {
+    body>.lr-struct {
+        min-height: 0;
+    }
+
+    body>.lr-struct>main {
+        margin-left: 0;
+    }
+
+    body>.lr-struct>aside,
+    body>.lr-struct>button {
+        display: none;
+    }
+}
+
+/* as-struct */
+body>.lr-struct>main>article {
+    display: flow-root;
+    margin: 0 auto;
+    margin-bottom: 100vh;
+    max-width: var(--length-width);
+    min-width: 100px;
+    padding: 0 var(--length-padding);
+}
+
+@media print {
+    body>.lr-struct>main>article {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+body>.lr-struct>aside>.content {
+    height: 100%;
+    overflow: auto;
+}
+
+body>.lr-struct>aside>.content>* {
+    margin: var(--length-padding);
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: menu;
+    src: url(menu.woff);
+}
+
+.show-icon.menu::before {
+    font-family: menu;
+    content: "A";
+}
