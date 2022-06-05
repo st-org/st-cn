@@ -21,13 +21,10 @@ rm -r */scripts
 rm -r */src
 rm -r */test
 rm */*.d.ts
-rm */*.mp4
-rm */*.vtt
 rm */.gitignore
 rm */check.sh
 rm */LICENSE
 rm */package-lock.json
-rm */test.*
 rm */tsconfig.json
 rm */webpack.config.js
 
