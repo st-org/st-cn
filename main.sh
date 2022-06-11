@@ -21,6 +21,7 @@ rm -r */scripts
 rm -r */src
 rm -r */test
 rm */*.d.ts
+rm */*.stdn
 rm */.gitignore
 rm */check.sh
 rm */LICENSE
