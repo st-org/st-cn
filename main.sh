@@ -1,7 +1,9 @@
+mv dist/katex* katex
 rm -rf dist
 mkdir dist
 cd dist
 
+mv ../katex .
 git clone https://github.com/st-org/stc.git --depth 1
 git clone https://github.com/st-org/sthl.git --depth 1
 git clone https://github.com/st-org/stui.git --depth 1
