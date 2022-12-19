@@ -9,7 +9,7 @@ git clone https://github.com/st-org/sthl.git --depth 1
 git clone https://github.com/st-org/stui.git --depth 1
 git clone https://github.com/st-org/st-std.git --depth 1 -b cn
 git clone https://github.com/st-org/st-view.git --depth 1 -b cn
-git clone https://github.com/st-mod/demo.git --depth 1
+git clone https://github.com/st-mod/demo.git --depth 1 -b cn
 git clone https://github.com/st-mod/beamer.git --depth 1
 git clone https://github.com/st-mod/cd.git --depth 1
 git clone https://github.com/st-mod/page.git --depth 1
