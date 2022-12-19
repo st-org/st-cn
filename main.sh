@@ -1,4 +1,4 @@
-mv dist/katex* katex
+mv dist/katex* .
 
 rm -rf dist
 mkdir dist
@@ -31,10 +31,10 @@ rm */package-lock.json
 rm */tsconfig.json
 rm */webpack.config.js
 
-mv ../katex .
-
 cd ..
 node version.mjs
 cd dist
 
 rm */package.json
+
+mv ../katex* .
